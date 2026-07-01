@@ -39,12 +39,6 @@ Find the group ID of the host Docker socket:
 stat -c '%g' /var/run/docker.sock
 ```
 
-On macOS, use:
-
-```bash
-stat -f '%g' /var/run/docker.sock
-```
-
 Update `.env` with the returned group ID:
 
 ```env
